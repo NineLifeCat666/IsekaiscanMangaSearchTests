@@ -1,2 +1,3 @@
 # IsekaiscanMangaSearchTests
-search new available chapter
+Search new available chapters on isekaiscan.com,
+and send allureReport to telegram bot.
