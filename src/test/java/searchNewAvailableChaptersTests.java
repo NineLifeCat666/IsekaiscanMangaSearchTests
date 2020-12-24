@@ -383,5 +383,21 @@ public class searchNewAvailableChaptersTests extends TestBase{
             $("[class='content-area']").shouldHave(text("Murim Possesses The Youngest Son"));
         });
     }
+
+    @Test
+    void searchTheBoyWhoHadBeenContinuouslyBurned() {
+        openIsekaiSkan();
+        step(searchNewChapter + "The Boy Who Had Been Continuously Burned", () -> {
+            $("[class='content-area']").shouldHave(text("The Boy Who Had Been Continuously Burned by the Fires of Hell. Revived, he becomes the strongest flame user."));
+        });
+    }
+
+    @Test
+    void searchBecomingAGodByMyself() {
+        openIsekaiSkan();
+        step(searchNewChapter + "Becoming a God by Myself", () -> {
+            $("[class='data-area']").shouldHave(text("Becoming a God by Myself"));
+        });
+    }
 }
 
